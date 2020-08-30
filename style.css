@@ -49,19 +49,6 @@ h1 {
     font-size: 1rem;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.col {
-    width: 100%;
-}
-
-.col + .col {
-    margin-left: 30px;
-}
-
 .image-container-dark {
     background-color: var(--main-bg-color-two);
     padding: 5em 0;
@@ -98,14 +85,18 @@ h1 {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 800px) {
     .row {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
     }
-
+    
+    .col {
+        width: 100%;
+    }
+    
     .col + .col {
-        margin-left: 0;
+        margin-left: 30px;
     }
 
     .slider-title {
